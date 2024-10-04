@@ -11,7 +11,7 @@ class AccountStatementUseCase:
         try:
             account = self.account_repository.find_account_by_id(account_id=account_id)
             return (
-                f"Account: {account.account_number}: \nBalance: {account.get_balance()}"
+                f"Account: {account.account_number} \nBalance: {account.get_balance()}"
             )
         except ValueError as e:
             return str(e)
