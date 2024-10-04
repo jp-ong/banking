@@ -1,6 +1,6 @@
 from typing import List
 from uuid import UUID
-from domain.entities.account import Account
+from banking.domain.entities.account import Account
 
 
 class AccountRepository:

@@ -1,6 +1,6 @@
 from uuid import UUID
-from enums.transaction_type import TransactionType
-from infrastructure.account_repository import AccountRepository
+from banking.enums.transaction_type import TransactionType
+from banking.infrastructure.account_repository import AccountRepository
 
 
 class TransactionUseCase:

@@ -8,12 +8,12 @@ class Account:
         self.account_number = account_number
         self.balance = balance
 
-    def deposit(self, amount):
+    def deposit(self, amount: int):
         if amount < 0:
             raise ValueError("Invalid deposit amount")
         self.balance += amount
 
-    def withdraw(self, amount):
+    def withdraw(self, amount: int):
         if amount > self.balance:
             raise ValueError("Insufficient balance")
         self.balance -= amount

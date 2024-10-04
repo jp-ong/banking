@@ -1,6 +1,6 @@
 from uuid import UUID
-from domain.entities.account import Account
-from infrastructure.account_repository import AccountRepository
+from banking.domain.entities.account import Account
+from banking.infrastructure.account_repository import AccountRepository
 
 
 class AccountUseCase:

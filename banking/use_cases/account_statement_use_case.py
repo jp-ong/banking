@@ -1,6 +1,6 @@
 from uuid import UUID
 
-from infrastructure.account_repository import AccountRepository
+from banking.infrastructure.account_repository import AccountRepository
 
 
 class AccountStatementUseCase:
