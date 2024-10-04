@@ -10,8 +10,11 @@ class AccountRepository:
     def save_account(self, account: Account):
         self.accounts[account.account_id] = account
 
-    def find_account_by_id(self, account_id: UUID) -> Account | None:
-        return self.accounts.get(account_id)
+    def find_account_by_id(self, account_id: UUID) -> Account:
+        account = self.accounts.get(account_id)
+        if account is None:
+            raise ValueError("Account not found.")
+        return account
 
     def find_accounts_by_customer_id(self, customer_id: UUID) -> List[Account]:
         return [
